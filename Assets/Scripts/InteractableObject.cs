@@ -10,10 +10,15 @@ public class InteractableObject : MonoBehaviour
 
     private void OnMouseDown()
     {
-        ObjectText.text = this.gameObject.name;
-        this.gameObject.SetActive(false);
+        //ObjectText.text = this.gameObject.name;
+       // this.gameObject.SetActive(false);
 
         clicked.Invoke();
+    }
+
+    private void OnMouseOver()
+    {
+        ObjectText.text = "Wir sind drüber"; //this.gameObject.name;
     }
 
 
